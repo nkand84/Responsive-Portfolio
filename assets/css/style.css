@@ -399,9 +399,7 @@ input[type=submit] {
  }
 /* ---------------------------------------media query for 768px-------------------------------------------------------------------------- */
 @media screen and (max-width:768px){
-  #logo{
-    margin-left:15px;
-  }
+  
     /* image should float left with content wrapping around  */
    .auth-image{
       width: 300px;
@@ -409,47 +407,54 @@ input[type=submit] {
       margin: 15px 15px 0px 0px;
     }
     .main-section {
-      max-width: none; !important
+      max-width: 650px; 
+      width: 100%;
     }
     .sidebar{
-      max-width: none; !important
+      float: left;
       margin-bottom: 30px;
+      max-width: 650px;
+      width: 100%;
     }
-    .work:nth-child(even) {
-      margin-right: 40px;
-   }
-  .work {
-      float: left;!important
-  }
-  ul{
-    margin-right: 15px;
-  }
+    
+   .work {
+        float: left;!important
+    }
+    #masthead {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
 }   
 /* ---------------------------------------media query for 640px-------------------------------------------------------------------------- */
 @media screen and (max-width:640px){
-    #logo{
+
+    nav li:first-child {
+      padding-top: 18px;
+      padding-bottom: 20px;
+      }
+      #logo{
+        width: 100%;
+      }
+      nav{
+        float: none;
+        margin-top: 0px;
+        text-align: center;
+      }
+      /* image should float left with content wrapping around  */
+    .auth-image{
       width: 100%;
-    }
-    nav{
-      float: none;
-      margin-top: 0px;
-      text-align: center;
-    }
-     /* image should float left with content wrapping around  */
-   .auth-image{
-    width: 100%;
-    height:auto;
-    margin-bottom:30px;
-    }
-    #masthead{
-      position: static;
-    }
-    main{
-      padding-top:0;
-    }
-    .work{
-      margin-left: 150px;
-    }
-    
+      height:auto;
+      margin-bottom:30px;
+      }
+      #masthead{
+        position: static;
+        padding: 0; 
+      
+      }
+      
+      main{
+        padding-top:0;
+      }
+     
 }
    
